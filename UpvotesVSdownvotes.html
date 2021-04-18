@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Upvotes vs Downvotes</p>
+
+</body>
+<script type="text/javascript">
+function getVoteCount(votes) {
+	return votes.upvotes-votes.downvotes;
+}
+var result1 =getVoteCount({ upvotes: 13, downvotes: 0 });
+console.log(result1);
+
+
+var result2 =getVoteCount({ upvotes: 2, downvotes: 33 });
+console.log(result2);
+
+
+var result3 =getVoteCount({ upvotes: 132, downvotes: 132 });
+console.log(result3);
+
+	
+</script>
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<body>
+    <p>
+        Rotate the Array by One
+    </p>
+</body>
+<script>
+    function rotateByOne(arr) {
+        var result;
+        console.log(JSON.stringify(arr), 'before deletion');
+        var x = arr.pop();
+        console.log(JSON.stringify(arr), 'after deletion');
+        console.log(x, 'deleted value');
+
+        arr.unshift(x);
+        console.log(JSON.stringify(arr), 'after added deleted value at begining');
+        result = arr;
+        return result;
+
+
+       /**  comment code
+        *  ctrl +  /
+        * /
+
+        /**
+         * arr.unsift(arr.pop())
+         * return arr;
+         * 
+         */
+
+
+
+        //  arr.unshift(arr.pop());
+        //  return arr;
+
+        //alt +shift + F
+    }
+
+    var result = rotateByOne([1, 2, 3, 4, 5]);
+    console.log(JSON.stringify(result));
+
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <p>
+            Buggy Code
+        </p>
+    </body>
+    <script>
+        function sumArray(arr) {
+         var sum=0;
+         for(var i=0;i<arr.length;i++){
+             sum = sum + arr[i];
+
+         }
+         return sum;
+    
+
+            
+        }
+        var result = sumArray([1, 2, 3, 4, 5]);
+        console.log(result);
+
+
+        var result2 = sumArray([-1, 0, 1])
+        console.log(result2);
+
+        var result3 = sumArray([0, 4, 8, 12])
+        console.log(result3);
+    </script>
+</html>
